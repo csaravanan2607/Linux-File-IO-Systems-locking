@@ -19,9 +19,10 @@ Execute the C Program for the desired output.
 
 # PROGRAM:
 
-## 1.To Write a C program that illustrates files copying :
-
-include <sys/stat.h>
+## 1.To Write a C program that illustrates files copying 
+```c
+#include <unistd.h>
+#include <sys/stat.h>
 #include <fcntl.h>
 #include <stdlib.h>
 int main()
@@ -34,10 +35,12 @@ out = open("file.out", O_WRONLY|O_CREAT, S_IRUSR|S_IWUSR);
 while((nread = read(in,block,sizeof(block))) > 0)
 write(out,block,nread);
 exit(0);}
+```
 
 
-## 2.To Write a C program that illustrates files locking :
-
+## 2.To Write a C program that illustrates files locking
+```c
+//C program that illustrates files locking goes here
 #include <fcntl.h>
 #include <stdio.h>
 #include <string.h>
@@ -75,13 +78,16 @@ getchar();
 close (fd);
 return 0;
 }
+```
 
 
-## OUTPUT :
 
-![image](https://github.com/user-attachments/assets/39a6aa9e-c95a-4ea0-a84a-8846c4cfccc5)
+## OUTPUT
+### filecopy.o
+![alt text](image-1.png)
 
-![image](https://github.com/user-attachments/assets/07dda3c3-5695-41e6-8dbf-4c3eab55b430)
+### lock.o
+![alt text](image-2.png)
 
 
 # RESULT:
