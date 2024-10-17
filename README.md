@@ -79,9 +79,6 @@ close (fd);
 return 0;
 }
 ```
-
-
-
 ## OUTPUT
 ### filecopy.o
 ![image-1](https://github.com/user-attachments/assets/7582ec6b-8160-4d87-a40a-7dc347961d38)
